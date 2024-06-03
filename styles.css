@@ -68,9 +68,29 @@ button:hover {
     white-space: nowrap;
 }
 
-#output1, #output2, #output3, #output4, #output5 {
+#output1 {
+    top: -250px;
     left: -50px;
+}
+
+#output2 {
+    top: -200px;
+    left: -50px;
+}
+
+#output3 {
+    top: -150px;
+    left: -50px;
+}
+
+#output4 {
+    top: -100px;
+    left: -50px;
+}
+
+#output5 {
     top: -50px;
+    left: -50px;
 }
 
 #output6 {
@@ -79,6 +99,5 @@ button:hover {
     font-size: 31px;
     left: -50px;
     top: 100px;
-    max-width: 8000px;
     line-height: 1.2;
 }
