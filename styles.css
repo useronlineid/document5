@@ -2,6 +2,8 @@
 
 body {
     font-family: 'TH Sarabun New', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,19 +14,19 @@ body {
     background-image: url('path-to-your-image.jpg'); /* URL รูปภาพพื้นหลังที่คุณอัปโหลดไปใน GitHub */
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังสีขาวพร้อมความโปร่งใส */
-    padding: 20px;
-    border-radius: 10px;
+    background: transparent; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 600px;
-    height: auto; /* ความสูงอัตโนมัติ */
+    max-width: 900px;
+    height: 600px; /* ความสูงอัตโนมัติ */
     max-height: 80vh; /* ความสูงสูงสุด 80% ของความสูงหน้าจอ */
     text-align: left;
     overflow: auto; /* แสดง scrollbar ถ้าข้อความยาวเกิน */
+    position: relative; /* กำหนด position เพื่อให้ลูกที่เป็น absolute สามารถกำหนดตำแหน่งได้ */
 }
 
 h1 {
@@ -67,19 +69,42 @@ button:hover {
 
 .input {
     color: #828282;
-    font-size: 40px;
+    font-size: 32px;
     white-space: pre-wrap;
-    text-align: center;
+    text-align: left;
+    position: absolute; /* ใช้ position absolute เพื่อให้สามารถปรับตำแหน่งได้ */
 }
 
-#output1, #output2, #output3, #output4, #output5 {
-    margin-bottom: 20px;
+#output1 {
+    top: 128px;
+    left: 415px;
+}
+
+#output2 {
+    top: 192px;
+    left: 415px;
+}
+
+#output3 {
+    top: 255px;
+    left: 415px;
+}
+
+#output4 {
+    top: 322px;
+    left: 415px;
+}
+
+#output5 {
+    top: 383px;
+    left: 415px;
 }
 
 #output6 {
     color: red;
     white-space: pre-wrap;
-    font-size: 31px;
-    margin-top: 40px;
+    font-size: 30px;
     line-height: 1.2;
+    top: 457px;
+    left: 205px;
 }
