@@ -9,20 +9,23 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #e8f5e9; /* สีเขียวอ่อน */
+    background-image: url('path-to-your-image.jpg'); /* URL รูปภาพพื้นหลังที่คุณอัปโหลดไปใน GitHub */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    background-color: #ffffff; /* พื้นหลังสีขาว */
+    background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังสีขาวพร้อมความโปร่งใส */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
+    text-align: center;
 }
 
 h1 {
     color: #388e3c; /* สีเขียว */
-    text-align: center;
 }
 
 label {
@@ -32,6 +35,7 @@ label {
 }
 
 input[type="text"],
+select,
 textarea {
     width: calc(100% - 20px);
     padding: 10px;
@@ -40,10 +44,6 @@ textarea {
     border-radius: 5px;
     font-size: 20px;
     font-family: 'TH Sarabun New', sans-serif;
-}
-
-textarea {
-    height: 100px;
 }
 
 button {
@@ -64,41 +64,18 @@ button:hover {
 .input {
     color: #828282;
     font-size: 40px;
-    position: absolute;
-    white-space: nowrap;
+    white-space: pre-wrap;
+    text-align: center;
 }
 
-#output1 {
-    top: -250px;
-    left: -50px;
-}
-
-#output2 {
-    top: -200px;
-    left: -50px;
-}
-
-#output3 {
-    top: -150px;
-    left: -50px;
-}
-
-#output4 {
-    top: -100px;
-    left: -50px;
-}
-
-#output5 {
-    top: -50px;
-    left: -50px;
+#output1, #output2, #output3, #output4, #output5 {
+    margin-bottom: 20px;
 }
 
 #output6 {
     color: red;
-    white-space: pre-line;
+    white-space: pre-wrap;
     font-size: 31px;
-    left: -50px;
-    top: 100px;
+    margin-top: 40px;
     line-height: 1.2;
-    margin-top: 20px; /* เว้นระยะสองบรรทัด */
 }
