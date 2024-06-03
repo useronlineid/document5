@@ -69,7 +69,7 @@ button:hover {
 
 .input {
     color: #828282;
-    font-size: 32px;
+    font-size: 36px;
     white-space: pre-wrap;
     text-align: left;
     position: absolute; /* ใช้ position absolute เพื่อให้สามารถปรับตำแหน่งได้ */
