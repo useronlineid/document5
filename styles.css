@@ -100,4 +100,5 @@ button:hover {
     left: -50px;
     top: 100px;
     line-height: 1.2;
+    margin-top: 20px; /* เว้นระยะสองบรรทัด */
 }
