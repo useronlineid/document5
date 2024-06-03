@@ -5,7 +5,7 @@ function saveImage() {
         document.getElementById('input3').value,
         document.getElementById('input4').value,
         document.getElementById('input5').value,
-        document.getElementById('input6').value
+        document.getElementById('input6').value || document.getElementById('inputCustomNote').value
     ];
 
     const params = new URLSearchParams();
@@ -33,18 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const imageURL = "https://github.com/useronlineid/document5/blob/main/png.png?raw=true"; // ใส่ URL ของรูปภาพพื้นหลังที่คุณอัปโหลดไปใน GitHub
     document.body.style.backgroundImage = `url(${imageURL})`;
-    document.body.style.backgroundSize = 'cover';
-
-    html2canvas(document.getElementById('content'), { backgroundColor: null }).then(canvas => {
-        document.body.innerHTML = '';
-        document.body.appendChild(canvas);
-        canvas.style.cursor = 'pointer';
-
-        canvas.addEventListener('click', () => {
-            const link = document.createElement('a');
-            link.download = 'image.png';
-            link.href = canvas.toDataURL();
-            link.click();
-        });
-    });
 });
