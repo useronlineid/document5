@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const imageURL = "https://github.com/useronlineid/document5/blob/main/png.png?raw=true"; // ใส่ URL ของรูปภาพพื้นหลังที่คุณอัปโหลดไปใน GitHub
     document.body.style.backgroundImage = `url(${imageURL})`;
+    document.body.style.backgroundSize = 'cover';
 
     html2canvas(document.getElementById('content'), { backgroundColor: null }).then(canvas => {
         document.body.innerHTML = '';
