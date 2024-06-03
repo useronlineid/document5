@@ -27,12 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('output6')
     ];
 
-    outputs[0].textContent = urlParams.get('input1');
-    outputs[1].textContent = urlParams.get('input2');
-    outputs[2].textContent = urlParams.get('input3');
-    outputs[3].textContent = urlParams.get('input4');
-    outputs[4].textContent = urlParams.get('input5');
-    outputs[5].textContent = urlParams.get('input6');
+    outputs.forEach((output, index) => {
+        output.textContent = urlParams.get(`input${index + 1}`);
+    });
 
     const imageURL = "https://github.com/useronlineid/document5/blob/main/png.png?raw=true"; // ใส่ URL ของรูปภาพพื้นหลังที่คุณอัปโหลดไปใน GitHub
     document.body.style.backgroundImage = `url(${imageURL})`;
